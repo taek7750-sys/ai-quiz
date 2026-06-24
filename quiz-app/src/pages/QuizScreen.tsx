@@ -101,7 +101,7 @@ export function QuizScreen() {
 
   const submitQuiz = async (finalAnswers: AnswerRecord[]) => {
     setFinished(true)
-    const { addDoc, collection: col, updateDoc, doc: docRef, getDoc: gd, setDoc } = await import('firebase/firestore')
+    const { addDoc, collection: col, doc: docRef, getDoc: gd, setDoc } = await import('firebase/firestore')
 
     const questionMap: Record<string, Question & { id: string }> = {}
     questions.forEach((q) => { questionMap[q.id] = q })

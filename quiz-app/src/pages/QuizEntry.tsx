@@ -8,6 +8,7 @@ interface QuizSetPreview {
   id: string
   title: string
   accessCode: string
+  status: string
   settings: {
     questionCount: number
     difficulty: 'easy' | 'medium' | 'hard'

@@ -31,6 +31,8 @@ export interface Submission {
     selectedAnswer: string
     isCorrect: boolean
     timeSpentMs: number
+    correctAnswer: string
+    explanation: string
   }>
 }
 
